@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mega Menu</title>
+  
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: #222;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: brown;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+.menu li:hover {
+  background: black;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 1000px;
+  background: #ead1d1e9;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mega-menu .column {
+  flex: 1;
+  padding: 10px;
+}
+
+.mega-menu h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #c00;
+}
+
+.mega-menu a {
+  display: block;
+  padding: 5px 0;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.mega-menu a:hover {
+  color: #c00;
+}
+
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+
+</style>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home & Kitchen</a></li>
+      <li><a href="#">Men</a></li>
+      <li class="dropdown">
+        <a href="#">Beauty & Health</a>
+        <div class="mega-menu">
+          <div class="column">
+            <h3>Make up</h3>
+            <a href="#">Face</a>
+            <a href="#">Eyes</a>
+            <a href="#">Lips</a>
+            <a href="#">Nails</a>
+            <a href="#">Make up Kits</a>
+            <a href="#">Brushes & Tools</a>
+            <a href="#">Makeup Accessories</a>
+          </div>
+          <div class="column">
+            <h3>Skincare</h3>
+            <a href="#">View All</a>
+            <a href="#">Face Masks & Peels</a>
+            <a href="#">Facecream</a>
+            <a href="#">Haircare</a>
+            <a href="#">Bath & Shower</a>
+          </div>
+          <div class="column">
+            <h3>Baby & Mom</h3>
+            <a href="#">Baby Personal Care</a>
+            <a href="#">Mom Care</a>
+          </div>
+          <div class="column">
+            <h3>Mens Care</h3>
+            <a href="#">Board Care</a>
+            <a href="#">Fragrances for Men</a>
+          </div>
+          <div class="column">
+            <h3>Healthcare</h3>
+            <a href="#">Ear Buds & Cleaners</a>
+            <a href="#">Sanitary Pads</a>
+            <a href="#">Dental Care</a>
+            <a href="#">Weight Management</a>
+            <a href="#">Health Monitors</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
